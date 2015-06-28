@@ -20,7 +20,7 @@ public class buki : MonoBehaviour {
 			//Debug.Log("hit");
 			GetComponent<Renderer> ().enabled = false;         //buttai no tyekku wo hazusu
 			Invoke ("aaa",20);
-			hoge.SendMessage("bukichange");
+			//hoge.SendMessage("bukichange");
 		}
 	}
 	void aaa(){
