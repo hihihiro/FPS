@@ -17,10 +17,10 @@ public class buki : MonoBehaviour {
 	}
 	void OnTriggerEnter (Collider col){
 		if (col.GetComponent<Collider> ().gameObject.name == "FPSController"){
-			Debug.Log("hit");
+			//Debug.Log("hit");
 			GetComponent<Renderer> ().enabled = false;         //buttai no tyekku wo hazusu
 			Invoke ("aaa",20);
-			GameObject.SendMessage("bukichange")
+			hoge.SendMessage("bukichange");
 		}
 	}
 	void aaa(){

@@ -10,6 +10,13 @@ public class bukihennkou : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 	
 	}
+	void OnTriggerEnter (Collider col){
+		if (col.GetComponent<Collider> ().gameObject.name == "Cube") {
+
+		}
+	}
+
 }
