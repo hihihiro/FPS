@@ -6,14 +6,26 @@ public class playerHP : MonoBehaviour {
 	public int playernoHP;
 	// Use this for initialization
 	void Start () {
-		playernoHP = 100;
+		playernoHP = 50;
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//void OnColli
+
+
+
+
+
 	
 	}
+	void OnTriggerEnter(Collider col){
+		if (col.GetComponent<Collider> ().gameObject.name == "Cube") {
+			playernoHP --;
+			//if (playernoHP == 0){
+			//	Instantiate();
+		    //}
+		}
 
+	}
 }

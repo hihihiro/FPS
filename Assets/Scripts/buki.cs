@@ -3,7 +3,7 @@ using System.Collections;
 
 public class buki : MonoBehaviour {
 
-
+	GameObject anotherReceiver;
 	// Use this for initialization
 	void Start () {
 
@@ -20,7 +20,8 @@ public class buki : MonoBehaviour {
 			//Debug.Log("hit");
 			GetComponent<Renderer> ().enabled = false;         //buttai no tyekku wo hazusu
 			Invoke ("aaa",20);
-			//hoge.SendMessage("bukichange");
+			  //~~no object no bukihennkou nokansuu wo okuru
+
 		}
 	}
 	void aaa(){
