@@ -28,10 +28,12 @@ public class PlayerController : MonoBehaviour {
 		shotsound.Play ();
 		int distantce = 100;
 
-		if (Physics.Raycast (ray, out hit, distantce)) {
-			 if(hit.transform.gameObject.CompareTag ("Enemy")) {
-				Instantiate(hitsound,hit.point,Quaternion.identity);
-				hit.transform.gameObject.SendMessage("Damage");
+		//if ()
+			if (Physics.Raycast (ray, out hit, distantce)) {
+				 if(hit.transform.gameObject.CompareTag ("Enemy")) {
+					Instantiate(hitsound,hit.point,Quaternion.identity);
+					hit.transform.gameObject.SendMessage("Damage");
+
 			 }
 		}
 		Debug.DrawLine (ray.origin, ray.direction * distantce, Color.yellow);

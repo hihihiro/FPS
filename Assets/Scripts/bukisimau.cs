@@ -3,7 +3,8 @@ using System.Collections;
 
 public class bukisimau : MonoBehaviour {
 	public GameObject taihou;
-	public GameObject bukiSpawner;
+	//public GameObject bukiSpawner;
+	public GameObject oya;
 	// Use this for initialization
 	void Start () {
 	
@@ -17,7 +18,9 @@ public class bukisimau : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if (col.GetComponent<Collider> ().gameObject.name == "Cube") {
 			Destroy(this.gameObject);
-			Instantiate (taihou,bukiSpawner.transform.position,Quaternion.identity);
+			//Instantiate (taihou,bukiSpawner.transform.position,Quaternion.identity);
+			GameObject kodomo = Instantiate(taihou) as GameObject;
+			kodomo.transform.parent = oya.transform;
 		}
 
 	}

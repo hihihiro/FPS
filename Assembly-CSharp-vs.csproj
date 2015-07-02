@@ -72,6 +72,8 @@
      <Compile Include="Assets\Environment\Water\Water\Scripts\Water.cs" />
      <Compile Include="Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
      <Compile Include="Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+     <Compile Include="Assets\HPbar.cs" />
+     <Compile Include="Assets\Na.cs" />
      <Compile Include="Assets\Scripts\EnemyScript.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\GameManeger.cs" />
@@ -79,9 +81,13 @@
      <Compile Include="Assets\Scripts\buki.cs" />
      <Compile Include="Assets\Scripts\bukisimau.cs" />
      <Compile Include="Assets\Scripts\playerHP.cs" />
+     <Compile Include="Assets\bazookahasyya.cs" />
      <Compile Include="Assets\bukidasu.cs" />
      <Compile Include="Assets\enemyspawner.cs" />
+     <Compile Include="Assets\koukahatydou.cs" />
+     <Compile Include="Assets\managerScript.cs" />
      <Compile Include="Assets\tamahasyya.cs" />
+     <Compile Include="Assets\tamaparticle.cs" />
      <None Include="Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />

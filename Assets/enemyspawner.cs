@@ -8,7 +8,7 @@ public class enemyspawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		timer = 5f;
-		enemy = Resources.Load ("Enemy") as GameObject;
+		enemy = Resources.Load ("Enemy1") as GameObject;
 	
 	}
 	

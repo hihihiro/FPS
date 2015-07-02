@@ -1,12 +1,16 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
+//using UnityEngine.UI;
 public class playerHP : MonoBehaviour {
 
-	public int playernoHP;
+	//public CanvasRenderer owari;
+	//public int playernoHP;
+	public GameObject hpbar;
 	// Use this for initialization
 	void Start () {
-		playernoHP = 50;
+		//playernoHP = 50;
+		//owari = Canvas.Gameover;
 	
 	}
 	
@@ -19,13 +23,17 @@ public class playerHP : MonoBehaviour {
 
 	
 	}
-	void OnTriggerEnter(Collider col){
-		if (col.GetComponent<Collider> ().gameObject.name == "Cube") {
-			playernoHP --;
+	 private void OnTriggerEnter(Collider col){
+		if (col.gameObject.tag == "Enemy") {
+			//playernoHP --;
+
+			Debug.Log("playernoHP");
+			hpbar.gameObject.SendMessage("aDamage");
 			//if (playernoHP == 0){
-			//	Instantiate();
+				//owari.GetComponent<Text> ().enabled = true;
 		    //}
 		}
 
 	}
-}
+}//void OnTriggerEnter(Collider col){
+//	if (col.GetComponent<Collider> ().gameObject.name == "Cube") {
