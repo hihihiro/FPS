@@ -10,7 +10,7 @@ public class Na : MonoBehaviour {
 	NavMeshAgent agent;
 	float i = 0.22f;
 	//public GameObject kouka;
-	public GameObject hajike;
+	GameObject hajike;
 	
 	// Use this for initialization
 	void Start () {
@@ -37,7 +37,7 @@ public class Na : MonoBehaviour {
 			Destroy(this.gameObject);
 			//kouka.gameObject.SendMessage("koukahatudou");
 			Instantiate(hajike,transform.position,Quaternion.identity);
-			this.GetComponent<ParticleSystem>();
+			//this.GetComponent<ParticleSystem>();
 		}
 	}
 	

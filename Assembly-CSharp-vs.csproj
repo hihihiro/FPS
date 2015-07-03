@@ -83,11 +83,12 @@
      <Compile Include="Assets\Scripts\playerHP.cs" />
      <Compile Include="Assets\bazookahasyya.cs" />
      <Compile Include="Assets\bukidasu.cs" />
+     <Compile Include="Assets\cs.cs" />
      <Compile Include="Assets\enemyspawner.cs" />
-     <Compile Include="Assets\koukahatydou.cs" />
      <Compile Include="Assets\managerScript.cs" />
      <Compile Include="Assets\tamahasyya.cs" />
      <Compile Include="Assets\tamaparticle.cs" />
+     <Compile Include="Assets\tamasyoumetu.cs" />
      <None Include="Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />

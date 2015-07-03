@@ -10,7 +10,7 @@ public class EnemyScript : MonoBehaviour {
 	NavMeshAgent agent;
 	float i = 0.22f;
 	//public GameObject kouka;
-	//public GameObject hajike;
+	public GameObject hajike;
 	//ParticleSystem _par = this.GetComponent<ParticleSystem>();
 	// Use this for initialization
 	void Start () {
@@ -37,7 +37,7 @@ public class EnemyScript : MonoBehaviour {
 			Instantiate(effect,transform.position,Quaternion.identity);
 			Destroy(this.gameObject);
 			//kouka.gameObject.SendMessage("koukahatudou");
-			//Instantiate(hajike,transform.position,Quaternion.identity);
+			Instantiate(hajike,transform.position,Quaternion.identity);
 			this.GetComponent<ParticleSystem>();
 		}
 	}

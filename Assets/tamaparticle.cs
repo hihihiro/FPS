@@ -10,7 +10,7 @@ public class tamaparticle : MonoBehaviour
 		int count = shuriken.GetCollisionEvents (gameObject, ces);
 		foreach(ParticleCollisionEvent item in ces) {
 			// action
-			Debug.Log (item.collider);
+			//Debug.Log (item.collider);
 		}
 	}
 }

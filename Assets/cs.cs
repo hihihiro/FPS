@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class koukahatydou : MonoBehaviour {
+public class cs : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -12,8 +12,4 @@ public class koukahatydou : MonoBehaviour {
 	void Update () {
 	
 	}
-
-	//void koukahatudou(){
-	//	this.particleSystem.Play();
-	//}
 }
